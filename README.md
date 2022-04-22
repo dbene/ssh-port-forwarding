@@ -11,7 +11,7 @@ version: '3'
 
 services:
   example-portainer:
-    build: .
+    image: ghcr.io/dbene/ssh-port-forwarding:latest
     container_name: example-portainer
     user: "1000:1000"
     ports:
@@ -24,7 +24,7 @@ services:
       remoteName: "example"
 
   example-traefik:
-    build: .
+    image: ghcr.io/dbene/ssh-port-forwarding:latest
     container_name: example-traefik
     user: "1000:1000"
     ports:
